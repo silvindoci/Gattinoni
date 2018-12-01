@@ -74,6 +74,7 @@ header {
 
 .d_active .dropdown {
     display: block;
+    z-index: 10;
 }
 
 .drop-buttons .dropdown-inner {
@@ -89,6 +90,7 @@ header {
 
 .drop-text .title-news {
     float: left;
+    position: absolute;
 }
 
 .drop-text .link-news {
@@ -99,6 +101,7 @@ header {
     width: 100%;
     min-height: 30px;
     background-color: #ddec45;
+    font-weight: bold;
 }
 
 .drop-subtex1 {
@@ -137,6 +140,107 @@ header {
     }
 }
 
-.blow {
-    height: 2000px;
+
+/**/
+
+.bluerow {
+    min-height: 170px;
+    background-color: #f6f6f6;
 }
+
+.threebtn {
+    float: left;
+    margin-top: 30px;
+}
+
+.onebtn {
+    float: right;
+    margin-top: 30px;
+}
+
+.button {
+    padding-top: 15px;
+    color: #e6e6ff;
+    padding: 16px 32px;
+    position: relative;
+    cursor: pointer;
+}
+
+.button .img2 {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+.button .img1 {
+    display: none;
+    position: absolute;
+}
+
+.button:hover .img2 {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 38px;
+    border-radius: 5px;
+}
+
+.button:hover .img1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    margin-right: 20px;
+    border: 1px solid #8ccbc0;
+    border-radius: 7px 0 7px 7px;
+}
+
+.button1:hover {
+    background-color: #8ccbc0;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    margin-right: 20px;
+    border: 1px solid #fcc22d;
+    border-radius: 7px 0 7px 7px;
+}
+
+.button2:hover {
+    background-color: #fcc22d;
+    color: white;
+}
+
+.button3 {
+    background-color: white;
+    color: black;
+    margin-right: 20px;
+    border: 1px solid #9186bc;
+    border-radius: 7px 0 7px 7px;
+}
+
+.button3:hover {
+    background-color: #9186bc;
+    color: white;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.button4:hover {
+    background-color: #e7e7e7;
+}
+
+
+/**/
