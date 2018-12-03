@@ -1,6 +1,5 @@
 .container {
-    max-width: 1230px;
-    padding: 0;
+    max-width: 1233px;
 }
 
 header {
@@ -55,7 +54,7 @@ header {
     position: absolute;
     left: 5px;
     top: 49px;
-    z-index: 1;
+    z-index: 20;
 }
 
 
@@ -146,11 +145,18 @@ header {
 .bluerow {
     min-height: 170px;
     background-color: #f6f6f6;
+    padding-top: 31px;
 }
 
 .threebtn {
     float: left;
     margin-top: 30px;
+    width: 100%;
+    min-height: 100px;
+}
+
+.threebtn>.button1:focus {
+    border: none;
 }
 
 .onebtn {
@@ -158,26 +164,32 @@ header {
     margin-top: 30px;
 }
 
-.button {
+.threebtn>a,
+.onebtn>a {
+    text-decoration: none;
+}
+
+.butones {
     padding-top: 15px;
-    color: #e6e6ff;
+    background-color: transparent;
     padding: 16px 32px;
     position: relative;
     cursor: pointer;
+    top: 0;
 }
 
-.button .img2 {
+.butones .img2 {
     position: absolute;
     top: -1px;
     right: -1px;
 }
 
-.button .img1 {
+.butones .img1 {
     display: none;
     position: absolute;
 }
 
-.button:hover .img2 {
+.butones:hover .img2 {
     position: absolute;
     top: -4px;
     right: -4px;
@@ -185,7 +197,23 @@ header {
     border-radius: 5px;
 }
 
-.button:hover .img1 {
+.butones:hover .img1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.butones:focus .img2 {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 38px;
+    border-radius: 5px;
+}
+
+.butones:focus .img1 {
     display: block;
     position: absolute;
     top: 0;
@@ -194,11 +222,21 @@ header {
 }
 
 .button1 {
-    background-color: white;
     color: black;
     margin-right: 20px;
     border: 1px solid #8ccbc0;
     border-radius: 7px 0 7px 7px;
+    outline: 0;
+    min-height: 20px;
+}
+
+.threebtn>.button1:focus {
+    border: 1px solid transparent;
+    outline: 0;
+    background-color: #8ccbc0;
+    color: white;
+    height: 108px;
+    padding-bottom: 80px;
 }
 
 .button1:hover {
@@ -207,11 +245,12 @@ header {
 }
 
 .button2 {
-    background-color: white;
     color: black;
     margin-right: 20px;
     border: 1px solid #fcc22d;
     border-radius: 7px 0 7px 7px;
+    position: absolute;
+    top: 30px;
 }
 
 .button2:hover {
@@ -220,11 +259,12 @@ header {
 }
 
 .button3 {
-    background-color: white;
     color: black;
-    margin-right: 20px;
     border: 1px solid #9186bc;
     border-radius: 7px 0 7px 7px;
+    position: absolute;
+    top: 30px;
+    left: 290px;
 }
 
 .button3:hover {
@@ -244,3 +284,405 @@ header {
 
 
 /**/
+
+
+/**/
+
+.big-blue {
+    background-color: #d6e9e6;
+    height: 2000px;
+    padding-top: 30px;
+    color: #7f7f7f;
+}
+
+.big-blue h5 {
+    float: left;
+}
+
+.one1 {
+    margin-top: 17px;
+}
+
+.parigi {
+    max-width: 305px;
+    height: 48px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    margin-left: 0;
+    margin-right: -12px;
+}
+
+.parigi img {
+    float: left;
+    margin-right: 10px;
+}
+
+.date {
+    max-width: 305px;
+    height: 48px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.date img {
+    float: left;
+    margin-right: 10px;
+}
+
+.form-control {
+    width: 80%;
+    border: none;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+}
+
+.search {
+    max-width: 613px;
+    height: 48px;
+    background-color: #f6f6f6;
+    padding: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.search img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#mySearch {
+    max-width: 550px;
+    border: none;
+    background-color: #f6f6f6;
+}
+
+
+/**/
+
+
+/**/
+
+.two2 {
+    margin-top: 15px;
+}
+
+.filtri {
+    width: 230px;
+    height: 48px;
+    background-color: #8ccbc0;
+    color: white;
+    padding: 12px;
+}
+
+.prezzo {
+    text-align: left;
+    padding: 15px;
+    background-color: #f6f6f6;
+    width: 230px;
+    height: 150px;
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #8ccbc0;
+    border-right: 1px solid #8ccbc0;
+}
+
+.prezzo>p {
+    font-weight: bold;
+}
+
+.prezzo .prices {
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 60px;
+    color: #58b0a1;
+    font-weight: bold;
+}
+
+.prezzo input {
+    float: right;
+    width: 84px;
+    margin-top: -40px;
+    color: #58b0a1;
+    font-weight: bold;
+}
+
+.prezzo input::placeholder {
+    color: #58b0a1;
+}
+
+.categorie {
+    background-color: #f6f6f6;
+    width: 230px;
+    padding: 12px;
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #8ccbc0;
+    border-right: 1px solid #8ccbc0;
+}
+
+.categorie p {
+    font-weight: bold;
+}
+
+.check {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 10px;
+}
+
+.check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #ffffff;
+    border: 1px solid #9f9f9f;
+}
+
+.check:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.check input:checked~.checkmark {
+    background-color: #8ccbc0;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check input:checked~.checkmark:after {
+    display: block;
+}
+
+.check .checkmark:after {
+    padding: 12px;
+    border-radius: 0;
+}
+
+.check img {
+    margin: 2px;
+}
+
+.seleziona {
+    width: 230px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #8ccbc0;
+    border-right: 1px solid #8ccbc0;
+}
+
+.seleziona p {
+    font-weight: bold;
+}
+
+.seleziona form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seleziona input {
+    width: 170px;
+    height: 30px;
+}
+
+.seleziona .cerca {
+    width: 170px;
+    height: 30px;
+    border: none;
+    background-color: #8ccbc0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.cat1 .check {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.slidecontainer {
+    width: 100%;
+    text-align: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4aa999;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+
+/**/
+
+
+/**/
+
+.esc {
+    width: 230px;
+    height: 48px;
+    background-color: #8ccbc0;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.box {
+    width: 230px;
+    padding: 10px;
+    min-height: 130px;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #8ccbc0;
+    border-left: 1px solid #8ccbc0;
+    border-right: 1px solid #8ccbc0;
+}
+
+.box img {
+    float: left;
+}
+
+.box .par {
+    float: right;
+    width: 65%;
+    font-size: 14px;
+    margin-top: -5px;
+    line-height: 17px;
+}
+
+.par a {
+    color: #7f7f7f;
+    font-weight: bold;
+}
+
+
+/**/
+
+.col-two {
+    width: 745px;
+    margin-left: 29px;
+    height: 2000px;
+    border: 1px solid black;
+}
+
+.filtri1 {
+    width: 745px;
+    height: 48px;
+    background-color: #8ccbc0;
+}
+
+.mapframe {
+    width: auto;
+    height: 226px;
+}
+
+.col-three {
+    width: 230px;
+    margin-left: -43px;
+}
+
+.filtri2 {
+    height: 48px;
+    background-color: #8ccbc0;
+    padding: 13px;
+    color: white;
+    font-weight: bold;
+}
+
+#map {
+    height: 226px;
+    width: 100%;
+}
+
+.carrelo {
+    width: 230px;
+    height: 48px;
+    background-color: #8ccbc0;
+    color: white;
+    font-weight: bold;
+    padding: 13px;
+    text-transform: uppercase;
+}
+
+.totale {
+    height: 110px;
+    background-color: #f6f6f6;
+    padding: 25px;
+    font-weight: bold;
+}
+
+.eur {
+    color: #4aa999;
+}
+
+.plus {
+    height: 50px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #8ccbc0;
+    padding-top: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.plus img {
+    float: left;
+    margin: 6px 15px 0 10px;
+}
+
+.stampa {
+    height: 110px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #8ccbc0;
+    padding: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4aa999;
+}
