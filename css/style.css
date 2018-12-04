@@ -604,19 +604,6 @@ header {
 
 /**/
 
-.col-two {
-    width: 745px;
-    margin-left: 29px;
-    height: 2000px;
-    border: 1px solid black;
-}
-
-.filtri1 {
-    width: 745px;
-    height: 48px;
-    background-color: #8ccbc0;
-}
-
 .mapframe {
     width: auto;
     height: 226px;
@@ -665,15 +652,20 @@ header {
     height: 50px;
     background-color: #f6f6f6;
     border-top: 1px solid #8ccbc0;
-    padding-top: 12px;
+    padding-top: 15px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
 }
 
+.plus a {
+    color: #7f7f7f;
+    text-decoration: none;
+}
+
 .plus img {
     float: left;
-    margin: 6px 15px 0 10px;
+    margin: 3px 15px 0 10px;
 }
 
 .stampa {
@@ -685,4 +677,367 @@ header {
     text-align: center;
     text-transform: uppercase;
     color: #4aa999;
+}
+
+.stampa a {
+    color: #4aa999;
+    text-decoration: none;
+}
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+.col-two {
+    width: 94%;
+    margin-left: 29px;
+    height: 2000px;
+}
+
+.filtri1 {
+    max-width: 745px;
+    height: 48px;
+    background-color: #8ccbc0;
+    padding: 10px;
+    position: relative;
+}
+
+.filtri1 p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ul2 {
+    width: 90%;
+    float: right;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+.ul2 li {
+    display: inline;
+    margin: 0;
+    font-size: 10px;
+    padding: 0 15px;
+    border-right: 2px solid;
+}
+
+.ul2 li a {
+    color: #585858;
+    padding: 0;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+.media {
+    text-align: left;
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1px solid #8ccbc0;
+    position: relative;
+}
+
+.mt-0 {
+    width: 100%;
+    text-transform: uppercase;
+    color: #9f9f9f;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.myblock {
+    position: relative;
+    margin-top: 9px;
+}
+
+.mybtn {
+    width: 100%;
+    padding-left: 235px;
+    position: absolute;
+    top: 160px;
+}
+
+.small-btn1,
+.small-btn2,
+.small-btn3 {
+    width: 32px;
+    height: 32px;
+    background-color: #d6e9e6;
+    border: 1px solid transparent;
+    outline: 0;
+    padding: 0;
+}
+
+.small-btn4 {
+    position: absolute;
+    float: right;
+    right: 10px;
+    border: 1px solid #afd9d2;
+    background-color: #d6e9e6;
+    width: 190px;
+    height: 32px;
+    padding: 0;
+    font-weight: bold;
+    color: #585858;
+}
+
+.card-body {
+    border-radius: 0;
+    border: 1px solid #4aa999;
+}
+
+.map1 {
+    height: 297px;
+    width: auto;
+}
+
+.list {
+    background-color: #f6f6f6;
+    padding: 5px;
+}
+
+.dis1 {
+    line-height: 18px;
+    font-size: 14px;
+    text-align: left;
+    width: 55%;
+    float: left;
+}
+
+.dis1 img {
+    margin-right: 10px
+}
+
+.dis1 h6 {
+    color: #676767;
+    font-weight: bold;
+}
+
+.telefono {
+    font-weight: bold;
+    font-size: 16px;
+    color: #585858;
+    margin-right: 5px;
+}
+
+.dis2 {
+    float: right;
+    width: 40%;
+}
+
+.tit {
+    padding: 0;
+}
+
+.title {
+    height: 45px;
+    padding: 10px;
+    font-weight: bold;
+    color: #585858;
+    background-color: #f6f6f6;
+}
+
+.minicard {
+    min-height: 135px;
+}
+
+.l-left {
+    height: auto;
+    width: 20%;
+    float: left;
+}
+
+.l-left img {
+    margin: 15px;
+}
+
+.r-right {
+    float: right;
+    width: 72%;
+    padding-right: 10px;
+}
+
+.small-btn6 {
+    width: 522px;
+    height: 32px;
+    border: 1px solid #8ccbc0;
+    background-color: #f6f6f6;
+    text-align: left;
+    padding: 0 0 0 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #585858;
+}
+
+.small-btn6 img {
+    float: right;
+    margin: 5px 10px;
+}
+
+.lan {
+    border: none;
+    border-bottom: 1px solid #8ccbc0;
+    padding-left: 5px;
+}
+
+.lan h6 {
+    font-size: 14px;
+    line-height: 18px;
+    color: #585858;
+    font-weight: bold;
+}
+
+.links {
+    height: 32px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.links>div {
+    display: inline-block;
+}
+
+.links .rred {
+    width: 298px;
+    height: 28px;
+    font-weight: bold;
+    background-color: #f0bfbf;
+    font-size: 14px;
+    padding: 5px 0 0 5px;
+    border-radius: 0 5px 5px 0;
+}
+
+.links .rred a {
+    text-decoration: none;
+    color: #585858;
+}
+
+.links .er {
+    width: 91px;
+    height: 28px;
+    border: 1px solid#c2e3de;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.links .buy {
+    border: 1px solid#8ccbc0;
+    border-radius: 3px;
+}
+
+.links .buy a {
+    width: 91px;
+    height: 28px;
+    background-color: #8ccbc0;
+    text-decoration: none;
+    color: #585858;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 9px 5px 0;
+}
+
+.links .buy img {
+    margin: 2px;
 }
