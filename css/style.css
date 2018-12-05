@@ -159,11 +159,6 @@ header {
     border: none;
 }
 
-.onebtn {
-    float: right;
-    margin-top: 30px;
-}
-
 .threebtn>a,
 .onebtn>a {
     text-decoration: none;
@@ -176,6 +171,8 @@ header {
     position: relative;
     cursor: pointer;
     top: 0;
+    font-weight: bold;
+    color: #585858;
 }
 
 .butones .img2 {
@@ -222,7 +219,6 @@ header {
 }
 
 .button1 {
-    color: black;
     margin-right: 20px;
     border: 1px solid #8ccbc0;
     border-radius: 7px 0 7px 7px;
@@ -245,12 +241,12 @@ header {
 }
 
 .button2 {
-    color: black;
     margin-right: 20px;
     border: 1px solid #fcc22d;
     border-radius: 7px 0 7px 7px;
     position: absolute;
     top: 30px;
+    left: 145px;
 }
 
 .button2:hover {
@@ -259,7 +255,6 @@ header {
 }
 
 .button3 {
-    color: black;
     border: 1px solid #9186bc;
     border-radius: 7px 0 7px 7px;
     position: absolute;
@@ -272,10 +267,24 @@ header {
     color: white;
 }
 
+.onebtn {
+    float: right;
+    margin-top: 30px;
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    position: relative;
+    border-left: 1px solid #d9d9d9;
+}
+
 .button4 {
     background-color: white;
     color: black;
     border: 2px solid #e7e7e7;
+    border-radius: 5px;
+    float: right;
+    color: #888888;
+    font-weight: bold;
 }
 
 .button4:hover {
@@ -290,7 +299,7 @@ header {
 
 .big-blue {
     background-color: #d6e9e6;
-    height: 2000px;
+    min-height: 2000px;
     padding-top: 30px;
     color: #7f7f7f;
 }
@@ -888,7 +897,16 @@ header {
 
 .map1 {
     height: 297px;
-    width: auto;
+    width: 100%;
+}
+
+#map11 {
+    height: 297px;
+    width: 100%;
+}
+
+.map-body {
+    padding: 0;
 }
 
 .list {
@@ -911,6 +929,10 @@ header {
 .dis1 h6 {
     color: #676767;
     font-weight: bold;
+}
+
+.small-btn4 img {
+    margin-left: 25px;
 }
 
 .telefono {
@@ -1040,4 +1062,46 @@ header {
 
 .links .buy img {
     margin: 2px;
+}
+
+.pagination {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 260px;
+    margin-top: -50px;
+}
+
+.pagination a {
+    color: #848484;
+    float: left;
+    padding: 0 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pagination a.active {
+    color: #3d3d3d;
+}
+
+footer {
+    height: 174px;
+    padding-top: 50px;
+}
+
+.ul5 li,
+.ul6 li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.ul5 li a {
+    color: #7f7f7f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ul6 li a {
+    color: #7f7f7f;
+    text-decoration: none;
 }
