@@ -118,6 +118,27 @@ header {
     background-color: #feffeb;
 }
 
+.drop-subtext,
+.drop-subtex1,
+.drop-subtex2 {
+    min-height: 47px;
+    padding-top: 50px;
+}
+
+.drop-subtext>div,
+.drop-subtex1>div,
+.drop-subtex2>div {
+    margin-top: 8px;
+}
+
+.drop-subtext a,
+.drop-subtex1 a,
+.drop-subtex2 a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+}
+
 @media only screen and (max-width: 768px) {
     header {
         height: 190px;
@@ -317,7 +338,7 @@ header {
 }
 
 .parigi {
-    max-width: 305px;
+    width: 290px;
     height: 48px;
     background-color: #f6f6f6;
     padding: 12px;
@@ -331,7 +352,7 @@ header {
 }
 
 .date {
-    max-width: 305px;
+    width: 290px;
     height: 48px;
     background-color: #f6f6f6;
     padding: 12px;
@@ -355,11 +376,11 @@ header {
 }
 
 .search {
-    max-width: 613px;
+    width: 627px;
     height: 48px;
     background-color: #f6f6f6;
     padding: 10px;
-    margin-left: -15px;
+    margin-left: -30px;
     margin-right: -15px;
 }
 
@@ -370,7 +391,7 @@ header {
 }
 
 #mySearch {
-    max-width: 550px;
+    width: 80%;
     border: none;
     background-color: #f6f6f6;
 }
@@ -629,6 +650,7 @@ header {
 
 .filtri2 {
     height: 48px;
+    width: 230px;
     background-color: #8ccbc0;
     padding: 13px;
     color: white;
@@ -697,60 +719,6 @@ header {
     text-decoration: none;
 }
 
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
 .col-two {
     width: 94%;
     margin-left: 29px;
@@ -758,7 +726,7 @@ header {
 }
 
 .filtri1 {
-    max-width: 745px;
+    width: 100%;
     height: 48px;
     background-color: #8ccbc0;
     padding: 10px;
@@ -793,54 +761,6 @@ header {
     font-size: 16px;
     text-transform: uppercase;
 }
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
 
 .media {
     text-align: left;
@@ -892,6 +812,36 @@ header {
     padding: 0;
     font-weight: bold;
     color: #585858;
+}
+
+.small-btn1:focus {
+    background-color: #8ccbc0;
+    content: url("../img/mapon.png");
+    padding: 7px;
+}
+
+.small-btn2:focus {
+    background-color: #8ccbc0;
+    content: url("../img/liston.png");
+    padding: 0;
+}
+
+.small-btn3:focus {
+    background-color: #8ccbc0;
+    content: url("../img/hearton.png");
+    padding: 0;
+}
+
+.small-btn4:focus {
+    background-color: #8ccbc0;
+}
+
+.small-btn4:focus img {
+    transform: rotate(90deg);
+}
+
+.small-btn6:focus img {
+    transform: rotate(90deg);
 }
 
 .card-body {
@@ -965,6 +915,7 @@ header {
 
 .minicard {
     min-height: 135px;
+    border-bottom: 1px solid #d9d9d9;
 }
 
 .l-left {
@@ -1061,7 +1012,7 @@ header {
     color: #585858;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 0 9px 5px 0;
+    padding: 1px 9px 5px 0;
 }
 
 .links .buy img {
@@ -1070,9 +1021,8 @@ header {
 
 .pagination {
     display: inline-block;
-    margin-right: 50px;
-    margin-left: 260px;
-    margin-top: -50px;
+    margin-top: 0px;
+    margin-left: 250px;
 }
 
 .pagination a {
@@ -1108,4 +1058,230 @@ footer {
 .ul6 li a {
     color: #7f7f7f;
     text-decoration: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #d6e9e6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 50px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+a.menu-list {
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -40px;
+    right: 70px;
+    font-size: 80px;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hide1,
+    .hide2 {
+        display: none;
+    }
+    .toggle {
+        display: inline;
+        position: absolute;
+        top: -15px;
+    }
+    .sidenav .hide1,
+    .sidenav .hide2 {
+        display: inline;
+    }
+    .sidenav .hide1 .esc,
+    .sidenav .hide1 .box,
+    .sidenav .hide1 .seleziona,
+    .sidenav .hide1 .categorie,
+    .sidenav .hide1 .prezzo,
+    .sidenav .hide1 .filtri {
+        width: 80%;
+    }
+    .sidenav .hide1 .box .par a {
+        padding: 10px;
+    }
+    .col-three {
+        width: 86.5%;
+        padding-left: 43px;
+    }
+    .carrelo,
+    .filtri2 {
+        width: 100%;
+    }
+    .stampa a,
+    .plus a {
+        padding: 0;
+    }
+    .filtri1 {
+        height: auto;
+    }
+    .small-btn6 {
+        width: 100%;
+    }
+    .r-right {
+        padding: 0;
+        margin: 10px;
+    }
+    .parigi {
+        width: 100%;
+    }
+    .date {
+        width: 100%;
+    }
+    .search {
+        width: 90%;
+    }
+    .minicard {
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .plus p,
+    .stampa p {
+        font-size: 14px;
+    }
+    .par a {
+        font-size: 20px;
+        line-height: 18px;
+        margin-top: -10px;
+    }
+    .par p {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .one1 {
+        width: 100%;
+        margin: 10px;
+    }
+    .parigi {
+        width: 100%;
+    }
+    .date {
+        width: 184px;
+    }
+    .search {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .onebtn {
+        float: left;
+        margin: 20px 0;
+    }
+    .one1 {
+        width: 100%;
+        margin: 10px;
+    }
+    .parigi {
+        width: 100%;
+        margin: 2px;
+    }
+    .date {
+        width: 100%;
+        margin: 2px;
+    }
+    .search {
+        width: 100%;
+        margin: 2px;
+    }
+    .ul2 {
+        margin-left: -10px;
+        width: 87%;
+    }
+    .links .rred {
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .button2 {
+        left: 130px;
+    }
+    .button3 {
+        margin-left: -20px;
+        width: 30%;
+    }
+    .onebtn {
+        margin: 0 0 10px;
+    }
+    .filtri1 {
+        position: relative;
+        height: 100px;
+    }
+    .ordina p {
+        width: 100%;
+    }
+    .ul2 {
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        top: 20px;
+    }
+    .media {
+        position: relative;
+        height: 290px;
+    }
+    .mybtn {
+        width: 100%;
+        padding-left: 10px;
+        position: absolute;
+        top: 190px;
+    }
+    #myGroup1 .mybtn,
+    #myGroup2 .mybtn,
+    #myGroup3 .mybtn {
+        position: absolute;
+        top: 240px;
+        left: 0;
+        display: inline;
+    }
+    .links .rred {
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    .big-blue {
+        height: 2800px;
+    }
+    .centercolon {
+        padding-left: 0;
+    }
+    .media-body p {
+        font-size: 12px;
+    }
+    .big-blue h5 {
+        font-size: 14px;
+    }
+    .pagination {
+        margin-left: 10px;
+    }
 }

@@ -41,6 +41,22 @@ var dropmenu = (function() {
 })();
 
 
+//toggle menu
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+
+
+
+//slider
 var slider = document.getElementById("myRange");
 var output = document.getElementById("silverslider");
 output.innerHTML = slider.value;
@@ -51,10 +67,22 @@ slider.oninput = function() {
 
 
 
+////map
+var map1, map2;
 
-function initMap() {
-    var uluru = { lat: -25.344, lng: 131.036 };
-    var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 10, center: uluru });
-    var marker = new google.maps.Marker({ position: uluru, map: map });
+function drawMap() {
+
+    var mapOptions = {
+        zoom: 13,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: true,
+        fullscreenControl: false
+    }
+
+    mapOptions.center = new google.maps.LatLng(51.509865, -0.118092);
+    map1 = new google.maps.Map(document.getElementById("mapCanvas1"), mapOptions);
+
+    mapOptions.center = new google.maps.LatLng(52.370216, 4.895168);
+    map2 = new google.maps.Map(document.getElementById("mapCanvas2"), mapOptions);
+
 }
