@@ -414,7 +414,7 @@
                 <div class="col-md-6">
                     <div class="search">
                         <img src="./img/search.png" alt="">
-                        <input type="search" id="mySearch" placeholder="CERCA...">
+                        <input type="text" id="mySearch" placeholder="CERCA...">
                     </div>
                 </div>
             </div>
@@ -574,12 +574,9 @@
                                 </div>
                                 <div id="collapse1" class="collapse" data-parent="#myGroup1">
 
-                                    <div class="card card-body">
+                                    <div class="card card-body locat1">
                                         <div class="map1">
-                                            <div class="block-item">
-                                                <div id="mapCanvas2" class="map-item"> </div>
-
-                                            </div>
+                                            <div id="map-OH"></div>
                                         </div>
                                     </div>
 
@@ -853,8 +850,10 @@
                                 </div>
                                 <div id="collapse11" class="collapse" data-parent="#myGroup2">
 
-                                    <div class="card card-body">
-                                        <div class="map1"></div>
+                                    <div class="card card-body locat2">
+                                        <div class="map1">
+                                            <div id="map-CA"></div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -1131,8 +1130,10 @@
                                     <button class="btn small-btn4" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">A partire da € 140<img src="./img/blackarrow.png" alt=""></button>
                                 </div>
                                 <div id="collapseExample1" class="collapse" data-parent="#myGroup3">
-                                    <div class="card card-body">
-                                        <div class="map1"></div>
+                                    <div class="card card-body locat3">
+                                        <div class="map1">
+                                            <div id="map-UK"></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div id="collapseExample2" class="collapse" data-parent="#myGroup3">
@@ -1398,11 +1399,9 @@
                         </div>
 
 
-                        <div id="map">
-                            <div class="block-item">
-                                <div id="mapCanvas1" class="map-item"> </div>
-                            </div>
-                        </div>
+                        <div id="map-canvas" style="width:100%;height:220px;"></div>
+
+
 
 
                         <div class="carrelo">
@@ -1500,8 +1499,7 @@
             </ul>
         </div>
     </footer>
-
-    <script async defer src="http://maps.google.com/maps/api/js?key=AIzaSyCvDN-LuS_9_VFkR71Sc56P6y4cwWKvEpU&callback=drawMap"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>

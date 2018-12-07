@@ -57,7 +57,7 @@ header {
     content: url("../img/arrow.png");
     position: absolute;
     left: 5px;
-    top: 49px;
+    top: 47px;
     z-index: 20;
 }
 
@@ -1284,4 +1284,25 @@ a.menu-list {
     .pagination {
         margin-left: 10px;
     }
+}
+
+#map-OH {
+    width: 100%;
+    height: 297px;
+}
+
+#map-CA {
+    width: 100%;
+    height: 297px;
+}
+
+#map-UK {
+    width: 100%;
+    height: 297px;
+}
+
+.locat1,
+.locat2,
+.locat3 {
+    padding: 0
 }
