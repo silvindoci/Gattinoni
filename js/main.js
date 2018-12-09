@@ -3,7 +3,7 @@ $(function() {
 });
 
 var dropmenu = (function() {
-    var $listItems = $('#drop-buttons > ul > li'),
+    var $listItems = $('.drop-buttons > ul > li'),
         $menuItems = $listItems.children('.drop-link'),
         $body = $('body'),
         current = -1;
@@ -67,13 +67,9 @@ slider.oninput = function() {
 
 
 
-//harta e pare me buton kerkimi
-
-
 
 
 ///3 hatat
-
 function initialize() {
     //hara e pare me search box
     var markers = [];
@@ -137,6 +133,7 @@ function initialize() {
     var myLatlngOH = new google.maps.LatLng(39.630159, -84.175937);
     var myLatlngCA = new google.maps.LatLng(33.677705, -117.852974);
     var myLatlngUK = new google.maps.LatLng(51.520614, -0.121825);
+
     var mapOptionsOH = {
         zoom: 12,
         center: myLatlngOH,
