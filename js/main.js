@@ -55,7 +55,6 @@ function closeNav() {
 
 
 
-
 //slider
 var slider = document.getElementById("myRange");
 var output = document.getElementById("silverslider");
@@ -84,7 +83,7 @@ function initialize() {
 
     // butoni i kerkimit.
     var input = /** @type {HTMLInputElement} */ (
-        document.getElementById('')); //<--------------------id search------------------------
+        document.getElementById('#mySearch'));
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
     var searchBox = new google.maps.places.SearchBox(
