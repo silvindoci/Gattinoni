@@ -305,6 +305,7 @@ button:focus {
     padding-bottom: 6px;
     text-decoration: none;
     color: #7f7f7f;
+    font-weight: bold;
 }
 
 .dropdown-menu li a:hover {
