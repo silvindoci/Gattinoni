@@ -398,6 +398,7 @@ button:focus {
     padding: 12px;
     margin-left: 0;
     margin-right: -12px;
+    font-weight: bold;
 }
 
 .parigi img {
@@ -466,6 +467,7 @@ button:focus {
     background-color: #8ccbc0;
     color: white;
     padding: 12px;
+    font-weight: bold;
 }
 
 .prezzo {
