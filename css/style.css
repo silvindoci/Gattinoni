@@ -836,6 +836,7 @@ button:focus {
     color: #9f9f9f;
     font-size: 18px;
     padding-top: 5px;
+    font-weight: bold;
 }
 
 .myblock {
