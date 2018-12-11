@@ -378,7 +378,6 @@ button:focus {
 
 .big-blue {
     background-color: #d6e9e6;
-    min-height: 2000px;
     padding-top: 30px;
     color: #7f7f7f;
 }
@@ -1330,9 +1329,7 @@ a.menu-list {
         margin-bottom: 5px;
         font-size: 12px;
     }
-    .big-blue {
-        height: 2800px;
-    }
+    .big-blue {}
     .centercolon {
         padding-left: 0;
     }
